@@ -26,11 +26,11 @@ services:
       DEBUG: 'false'
     volumes:
     - type: bind
-      source: '${PWD}/configs'
+      source: './configs'
       target: '/usr/local/src/configs'
       read_only: true
     - type: bind
-      source: '${PWD}/jenkinsfiles'
+      source: './jenkinsfiles'
       target: '/usr/local/src/jenkinsfiles'
       read_only: true
     depends_on:
